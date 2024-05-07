@@ -71,6 +71,6 @@ top: 0;
 @media (min-width: 1500px) and (max-width: 2880px) {
   .container{
  
-    margin-left: 14rem !important;
+    margin-left: 12rem !important;
   }
 }
