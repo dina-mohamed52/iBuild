@@ -102,11 +102,11 @@ background: linear-gradient(-360deg, rgba(0, 0, 0, 0.801), #cca95dfd);
     top: -0.5rem; /* Adjust the top position */
   }
    .heading {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
     margin-left: 1.5%;
     transform: translateX(1.5%); 
     word-wrap: break-word;
-    margin-top: 8rem;
+    margin-top: 10rem;
 
   }
 }
