@@ -171,10 +171,10 @@
 @media (min-width: 1424px) and (max-width: 2880px) {
     .container {
         width: 95rem;
-         margin: 22rem auto 0 auto !important;
+/*          margin: 22rem auto 0 auto !important; */
 /*         margin: 22rem auto 0 auto !important; /* Center the container horizontally and adjust the margin as needed */ 
-/*        margin: 22rem auto 0 18% !important; 
-        transform: translateX(18%); */
+        margin: 22rem auto 0 14% !important; 
+        transform: translateX(14%); 
      
        left:auto !important;
     }
