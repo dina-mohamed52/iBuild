@@ -8,3 +8,8 @@ url("../assets/images/NW4.png")
   height: 100vh !important;
  padding: 1rem;
 }
+  @media (max-width: 768px) {
+      .container{
+        width: 100vw;
+      }
+    }
