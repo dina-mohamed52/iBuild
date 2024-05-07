@@ -172,8 +172,7 @@
     .container {
         width: 95rem;
 /*         margin: 22rem auto 0 auto !important; /* Center the container horizontally and adjust the margin as needed */ 
-        margin: 22rem auto 0 10% !important; 
-        transform: translateX(10%);
+        margin: 22rem auto 0 auto !important; 
        left:auto !important;
     }
 
