@@ -77,10 +77,11 @@
 }
 
 @media (max-width: 800px) {
-    .container {
+   .container {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-      margin-left: 3.5 !important;
+      margin-left: 0.5 !important;
         padding: 1rem;
+        margin-top: 10rem !important;
     }
 
     .card {
