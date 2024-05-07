@@ -103,8 +103,8 @@ background: linear-gradient(-360deg, rgba(0, 0, 0, 0.801), #cca95dfd);
   }
    .heading {
     font-size: 1.8rem; /* Adjust font size for smaller screens */
-    margin-left: 1.5%;
-    transform: translateX(1.5%); 
+    margin-left: 1%;
+    transform: translateX(1%); 
     word-wrap: break-word;
     margin-top: 10rem;
 
