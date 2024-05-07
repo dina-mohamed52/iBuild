@@ -59,23 +59,26 @@
         justify-content: center;
         height: auto;
         padding: 3rem;
+      
     }
     .card{
-        margin-top:10rem;
+        margin-top:14rem;
         transform: skew(0.5deg);
+        margin-bottom: -2rem;
+       
     }
-   .h11{
+    .h11{
       font-size: 1.2rem;
-      margin-left: -8rem;
-      margin-top: 8rem;
-      margin-bottom: 4rem;
+      margin-left: -4rem;
+      margin-top: 12rem;
+      margin-bottom: 2rem;
       word-break: break-all !important;
     }
 }
 @media (min-width: 1440px) and (max-width: 2880px) {
   .h11{
     font-size: 2.5rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
     margin-left: 2rem;
   }
 }
