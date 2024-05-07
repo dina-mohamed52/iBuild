@@ -87,9 +87,7 @@ background: linear-gradient(-360deg, rgba(0, 0, 0, 0.801), #cca95dfd);
   .buttons {
     top: 17rem; /* Adjust the top position */
   }
-.container{
-  margin-top: 20rem ;
-}
+
 .imageContainer{
   margin-top: 6rem;
 }
