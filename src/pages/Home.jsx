@@ -40,7 +40,7 @@ function Home() {
       <div className="h-auto">
         <Discounts />
       </div>
-      <div id="/projects" className="h-auto bg-[beige] ">
+      <div id="/projects" className="h-auto bg-[#f5f5f5] ">
         <Projects />
       </div>
 
