@@ -41,3 +41,6 @@ html{
     width: 18rem !important; 
     height: 12rem !important; 
 }
+@media screen and (max-width: 768px) {
+   overflow-x: hidden !important;
+}
