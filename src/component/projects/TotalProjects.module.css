@@ -68,7 +68,7 @@ top: 0;
   }
    */
     .container{
-    margin-left: -5rem !important;
+    margin-left: 0rem !important;
     display: flex;
     justify-content: center;
     align-items: center;
