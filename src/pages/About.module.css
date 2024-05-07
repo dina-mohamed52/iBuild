@@ -1,0 +1,141 @@
+.container {
+  background: linear-gradient(to top left, #cca95dc5, rgba(0, 0, 0, 0.8)),
+  url("../assets/images/c.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:115vh; 
+   padding-top: 1rem;
+}
+.H1 {
+  color: black;
+  font-size: 3rem;
+  margin-top: 4rem;
+  animation: slidInDown 2s ease-out;
+  
+}
+.H3{
+  animation: slidInRight 2s ease-out;
+}
+.H2{
+
+    animation: slidInLeft 2s ease-out  !important;
+  }
+  .P{
+  animation: slidInRight 2s ease-out ;
+  margin-top: -2rem;
+
+}
+
+
+.img::before {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  width: 100%;
+  height: 90%;
+  box-shadow: 0.5rem 0.3rem 0.3rem 0.3rem rgba(204, 169, 93, 0.445);
+
+  transform: rotate(-270deg);
+  border-radius: 1rem;
+}
+.img {
+  position: relative;
+
+  padding: 2rem;
+  margin-top: 5rem;
+padding-top: 5rem;
+  margin-left: -1rem;
+}
+
+
+@keyframes slidInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    80%{
+     
+        transform: translateX(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slidInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+   
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slidInDown {
+    0%{
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+   
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container{height: auto;
+  margin-top: -4rem;
+  }
+  .H1 {
+    font-size: 1.5rem;
+   text-align: center;
+   margin-top: 7rem;
+  }
+  .H2,.P {
+    font-size: 1rem !important;
+  font-weight: 600;
+text-align: center;
+
+}
+.P{
+  margin-top: -2.8rem !important;
+}
+.img {
+    
+    width: 20rem !important ;
+    height: 15rem !important;
+}
+
+}
+
+@media (max-width: 1014px) {
+    .H1 {
+        font-size: 2rem;
+     
+        text-align: center;
+        margin-top: 6rem;
+
+    }
+   .H2,.P {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 600;
+        padding: 2rem;
+   
+       
+  }
+  .P{
+    margin-top: -2rem !important ;
+  }
+  .img {
+    width: 20rem !important;
+    height: 15rem !important;
+    margin-top: 2rem;
+  
+  }
+}

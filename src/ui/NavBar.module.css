@@ -1,0 +1,41 @@
+
+a{
+    width: 14rem;
+    border-radius: 2rem;
+     color: #c0a879 !important;
+   
+}
+
+a:hover {
+   backface-visibility: hidden;
+  background-color: #cca95dc5;
+  color: rgba(0, 0, 0, 0.719) !important ;
+  box-shadow: 0 0.3rem 0.5rem rgba(204, 169, 93, 0.445); 
+  border-radius: 2rem;
+  transition: all 0.4s ease-out;
+}
+button{
+ background-color: #cca95dc5!important ;
+   box-shadow: 0rem 0.3rem 0.5rem rgba(204, 169, 93, 0.445); 
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-out;
+  width: 12rem;
+}
+button:hover {
+ 
+   transform: translateY(-0.3rem);
+    box-shadow: 0 0.3rem 0.5rem rgba(243, 169, 10, 0.445); 
+}
+button:active{
+     transform: translateY(-0.1rem);
+      box-shadow: 0 0.3rem 0.5rem rgba(204, 169, 93, 0.445); 
+}
+#time{
+ background-color: #cca95d;   
+  box-shadow: 0 0.3rem 0.5rem rgba(204, 169, 93, 0.445); 
+}
+.navIcon{
+   background-color:rgba(0, 0, 0, 0.496);
+    box-shadow: 0rem 0.3rem 0.5rem rgba(204, 169, 93, 0.445); 
+
+}

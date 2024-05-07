@@ -1,0 +1,17 @@
+.container {
+background-image: linear-gradient(to right bottom ,rgba(0, 0, 0, 0.808),#c0a879c5),
+url("../../assets/images/NW3.png")
+;
+  background-position: top; 
+  background-size: cover;
+  height: 100vh;
+ padding: 1rem;
+
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    background-size:cover; 
+    height: 135vh;
+   
+  }}

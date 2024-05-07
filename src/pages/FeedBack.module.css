@@ -1,0 +1,25 @@
+.container{
+     background: linear-gradient(to top left, #cca95dc5, rgba(0, 0, 0, 0.8)),
+     url("../assets/images/n.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.textcontainer{
+  text-align: center;
+ 
+}
+@media (max-width: 768px) {
+    .textcontainer {
+      margin-top: 0rem !important;
+      font-size: 2rem;
+        /* Adjust other styles for small screens */
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+   .textcontainer {
+       margin-top: 0rem !important;
+        /* Adjust other styles for medium screens */
+    }
+}

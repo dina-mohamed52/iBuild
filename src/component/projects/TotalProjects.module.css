@@ -1,0 +1,70 @@
+.container{
+    background-color: beige;
+    height: auto;
+   
+   
+    padding: 6rem;
+    
+}
+.card{
+    height: 35rem;
+    width: 28rem;
+    background-color: beige;
+    cursor: pointer;
+
+}
+.card:hover {
+  border: 2px solid #eab308; /* Yellow border on hover */
+}
+.Img{
+    height:22rem!important ;
+    image-resolution:initial;
+    background-size: auto;
+}
+.textContainer{
+    position: relative;
+    
+}
+.projectHeader{
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #cca95dc5;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+   position: absolute;
+   width: 19rem;
+   top: -1.8rem;
+   left: 4.2rem;
+
+}
+.subtextContainer{
+    margin-top: 1rem;
+    line-height: 3.75rem;
+    font-size: 1.31rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+   margin-left: 2rem;
+}
+.overlay {
+  position: absolute;
+top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.card:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+@media (max-width: 768px){
+  .card{
+    margin-left: -1.5rem;
+  }
+  
+}

@@ -1,0 +1,42 @@
+.contactContainer{
+    font-size: 1rem;
+}
+.servicesContainer{
+    font-size: 1rem;
+}
+.followContainer{
+    font-size: 1rem;
+}
+.copyRight{
+    font-size: inherit;
+}
+/* Adjust the font size for small screens */
+@media (max-width: 768px) {
+    .contactContainer, .servicesContainer, .followContainer {
+       margin-left: 2rem; 
+       height: auto;
+    }
+    .copyRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+   margin-top: -2rem !important;
+   height: auto;
+    }
+}
+@media (min-width: 769px) and (max-width: 1424px) {
+    .contactContainer, .servicesContainer, .followContainer {
+        margin-left: 2rem; 
+       height: auto; /* Adjust the font size for medium screens */
+    }
+     .copyRight{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+}

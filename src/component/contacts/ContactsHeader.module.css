@@ -1,0 +1,134 @@
+.Hcontainer {
+    margin-top: 13rem;
+    margin-left: 5rem;
+}
+
+.H1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #e7b74e;
+    animation: slidInTop 2s ease-out;
+}
+
+.text {
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.subHeader {
+    animation: slidInLeft 4s ease-out;
+    visibility: visible;
+   
+}
+
+.contacts {
+    margin-left: -2rem;
+    animation: slidInDown 4s ease-out;
+}
+.logo{
+    text-align: center;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .Hcontainer {
+        margin-top: 1rem !important;
+        margin-left: -1rem !important;
+        font-size: 1.5rem !important;
+      
+        
+    }
+.logo{
+    width: 34rem;
+    margin-left: 6rem !important;
+}
+    .text {
+        font-size: 1rem !important;
+   
+        text-align: center !important;
+    }
+    /* .subHeader{
+     visibility: hidden !important;
+      opacity: 0 !important;
+    } */
+
+    .contacts {
+        margin-left: 0;
+      margin-top: 9rem !important;
+    }
+}
+
+/* Media query for medium screens */
+@media (max-width: 1024px) {
+    .Hcontainer {
+        margin-top: 7rem;
+        margin-left: 3rem;
+    }
+
+    .H1 {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .text {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+
+    .contacts {
+        margin-left: 0;
+        
+    }
+}
+
+@keyframes slidInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slidInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    80% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slidInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(14rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+}

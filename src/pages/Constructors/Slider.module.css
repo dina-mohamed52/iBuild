@@ -1,0 +1,154 @@
+.sectionbg {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.808), #c0a879c5),
+    url("../../assets/images/b.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.sliderContainer {
+  background-color: rgba(0, 0, 0, 0.507);
+  box-shadow: 0.5rem 0.3rem 0.3rem rgba(204, 169, 93, 0.445);
+  border-radius: 0.5rem;
+  height: 18rem;
+   margin: 0 auto; /* Center the container */
+  position: relative; /* Position for absolute children */
+}
+
+.slider {
+  background-color: rgba(204, 169, 93, 0.507);
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-top: 1.5rem;
+  height: 13rem;
+  width: auto;
+}
+
+.slider > h5 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sliderText {
+  color: beige;
+}
+
+.author > h6 {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.author > p {
+  color: beige;
+}
+
+.slider__btnP {
+  z-index: 10;
+  cursor: pointer;
+    left: 1rem; /* Position the previous button on the left */
+}
+
+.slider__btnN {
+  z-index: 30;
+  cursor: pointer;
+   position: absolute;
+   right: -20rem !important;
+   top: 50%; /* Align the button vertically in the middle */
+  transform: translateY(-50%); /* Center the button vertically */
+}
+
+@media (max-width: 768px) {
+  .slider__btnN,
+  .slider__btnP {
+    font-size: 0.8rem;
+  }
+
+  .slider__btnN {
+    right: 5vw !important;
+  }
+
+  .slider__btnP {
+    left: 5vw !important;
+    top: 28.5rem !important;
+  }
+.sliderContainer{
+    width: auto !important;
+  }
+  .sliderText {
+    font-size: 0.75rem;
+    max-width: 100%;
+     overflow-wrap: break-word !important ;
+  }
+  .slider{
+    width: 80vw !important;
+  }
+}
+
+@media (max-width: 924px) {
+  .slider__btnN {
+    right: -10rem !important;
+  }
+.sliderText{
+   max-width: 100%;
+     overflow-wrap: break-word !important ;
+}
+  .slider__btnP {
+    left: 1rem !important;
+  }
+}
+
+@media (max-width: 1273px) {
+  .slider__btnN {
+    font-size: 0.6rem;
+    margin-right: 10rem !important;
+  }
+}
+@media (min-width: 1524px) and (max-width: 1960px) {
+  .sliderContainer {
+    height: 16rem; /* Adjust height as needed */
+  left: 1rem !important;
+  }
+
+  .slider {
+    height: 11rem; /* Adjust height as needed */
+  }
+
+  .sliderText {
+    font-size: 0.7rem; /* Adjust font size as needed */
+  }
+
+  .slider__btnN {
+    font-size: 0.7rem; /* Adjust font size as needed */
+    margin-right: auto !important; /* Adjust margin as needed */
+  }
+  .slider__btnP{
+    margin-left: 20rem !important;
+    margin-top: -0.9rem;
+  }
+}
+@media (min-width: 1970px) and (max-width: 2880px) {
+  .sliderContainer {
+    height: 16rem; /* Adjust height as needed */
+  left: 1rem !important;
+  }
+
+  .slider {
+    height: 11rem; /* Adjust height as needed */
+  }
+
+  .sliderText {
+    font-size: 0.7rem; /* Adjust font size as needed */
+  }
+
+  .slider__btnN {
+    font-size: 0.7rem; /* Adjust font size as needed */
+    margin-right: -20.5rem !important; /* Adjust margin as needed */
+  }
+  .slider__btnP{
+    margin-left: 25rem !important;
+    margin-top: -0.9rem;
+  }
+}
