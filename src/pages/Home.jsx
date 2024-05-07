@@ -20,19 +20,19 @@ import Feedback2 from "../component/Feedback2/Feedback2";
 function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <div id="/home" className="h-screen  ">
+      <div id="/home" className={`h-screen ${styles.container} `}>
         <Logo />
         <NavBar />
         <HomeHeader />
         <Carousel />
         <HomeContacts />
       </div>
-      <div id="/about" className="h-auto">
+      <div id="/about" className={`h-auto ${styles.container} `}>
         <About />
       </div>
-      
-      <div className="h-screen">
-        <CEO  />
+
+      <div className={`h-screen ${styles.container} `}>
+        <CEO />
       </div>
       <div id="/services" className={` ${styles.service} h-auto`}>
         <Services />
@@ -43,11 +43,11 @@ function Home() {
       <div id="/projects" className="h-auto bg-[beige] ">
         <Projects />
       </div>
-      
-      <div className="h-auto">
+
+      <div className={`h-auto ${styles.container} `}>
         <Feedback2 />
       </div>
-      <div id="/contact" className="h-auto ">
+      <div id="/contact" className={`h-auto ${styles.container} `}>
         <Contacts />
       </div>
       <div className="h-auto bg-black ">
