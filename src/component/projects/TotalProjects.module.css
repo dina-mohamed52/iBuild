@@ -63,10 +63,16 @@ top: 0;
   opacity: 1; /* Show overlay on hover */
 }
 @media (max-width: 768px){
-  .card{
+/*   .card{
     margin-left: -1.5rem;
   }
-  
+   */
+    .container{
+    margin-left: -6rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 1500px) and (max-width: 2880px) {
   .container{
