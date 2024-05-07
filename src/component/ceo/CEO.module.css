@@ -23,7 +23,8 @@
     left: 50%;
     top: 50%;
     border-radius: 0.6rem; 
-    box-shadow: 0.8rem 1rem 1rem rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+     box-shadow: 0.5rem 0.3rem 0.3rem 0.3rem rgba(204, 169, 93, 0.445);
+
     transform:translate(-50%, -50%) skewX(-15deg);
 }
 
