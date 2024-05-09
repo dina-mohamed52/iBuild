@@ -53,9 +53,9 @@ function HomeHeader() {
           <h1
             className={` text-center ${styles.logoName} text-3xl  uppercase  mb-[1.4rem] font-semibold`}
           >
-            <p className="text-[3rem] mb-[2rem] font-extrabold">
+            <p className="text-[4.2rem] text-[whitesmoke] mb-[2rem] font-extrabold">
               <span className="lowercase ">I</span>
-              <span className=" uppercase text-black"> build</span>
+              <span className=" uppercase"> build</span>
             </p>
             <p>
               {!isContactsVisible && (
