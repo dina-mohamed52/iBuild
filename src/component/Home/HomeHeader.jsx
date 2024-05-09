@@ -51,18 +51,22 @@ function HomeHeader() {
       <div className={`${styles.headerContainer} absolute z-10`}>
         <div className="flex flex-col items-center text-3xl ">
           <h1
-            className={` ${styles.logoName} text-3xl  uppercase  mb-[1.4rem] font-semibold`}
+            className={` text-center ${styles.logoName} text-3xl  uppercase  mb-[1.4rem] font-semibold`}
           >
-            <span className="lowercase ">I</span>
-            {!isContactsVisible && (
-              <span>
-                build
-                {isArabic ? "التصميم يلبي الرغبة" : "(Design meets desire)"}
-              </span>
-            )}
+            <p className="text-[3rem] mb-[2rem] font-extrabold">
+              <span className="lowercase ">I</span>
+              <span className=" uppercase text-black"> build</span>
+            </p>
+            <p>
+              {!isContactsVisible && (
+                <span>
+                  {isArabic ? "التصميم يلبي الرغبة" : "(Design meets desire)"}
+                </span>
+              )}
+            </p>
             {isContactsVisible && (
               <TypedText
-                text={`build ${
+                text={` ${
                   isArabic ? "التصميم يلبي الرغبة" : "(Design meets desire)"
                 }`}
                 speed={80}
