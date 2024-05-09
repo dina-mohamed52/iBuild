@@ -21,7 +21,7 @@ function About() {
         >
           <img src={Logo} alt="logo" />
         </div>
-        <div className="max-w-full lg:max-w-[40rem]">
+       <div className={`${isArabic?"text-center":""}  max-w-full lg:max-w-[40rem]`}>
           <h1 className={`${styles.H1} ${isContactsVisible ? styles.H2 : ""} `}>
             {!isContactsVisible &&
               (isArabic
@@ -38,6 +38,7 @@ function About() {
               />
             )}
           </h1>
+            <div className=" text-justify" > 
           <p
             className={` ${styles.animate} text-xl mt-4 ${
               isContactsVisible ? styles.contactVisible : ""
@@ -56,6 +57,7 @@ function About() {
               ? "على المستوى الشركاتي، نحن نتخذ دورًا متزايدًا في دعم جهود تطوير الأعمال لشركاء عملائنا. ستقوم هذه المبادرة التنموية التعاونية بأداء العديد من الوظائف الحيوية: تكون وسيطًا، تسهل الحوار المستمر بين الشخصيات التشغيلية الميدانية وشركاء المشروع"
               : "On a corporate level, we are taking an increasing role in supporting the business development efforts of our client partners. This cooperative business development initiative will perform several vital functions: Act as a liaison, facilitating an ongoing dialogue between field operating personnel and venture partners."}
           </p>
+            </div>
         </div>
       </div>
     </div>
