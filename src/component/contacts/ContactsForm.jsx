@@ -4,6 +4,8 @@ import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 const ContactForm = () =>
 {
+  // emailjs.init("your_user_id_here");
+
   const [ formData, setFormData ] = useState( {
     name: "",
     company: "",
@@ -53,46 +55,73 @@ const ContactForm = () =>
   };
 
   // service_ghcnhsp (sId)
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let errors = {};
-    if (!formData.name.trim()) {
-      errors.name = "Name is required";
-    }
-    if (!formData.email.trim()) {
-      errors.email = "Email is required";
-    }
-    if (!formData.phone.trim()) {
-      errors.phone = "Phone is required";
-    }
-    setErrors(errors);
+const handleSubmit = (e) => {
+  e.preventDefault();
+  let errors = {};
+  if (!formData.name.trim()) {
+    errors.name = "Name is required";
+  }
+  if (!formData.email.trim()) {
+    errors.email = "Email is required";
+  }
+  if (!formData.phone.trim()) {
+    errors.phone = "Phone is required";
+  }
+  setErrors(errors);
 
-    if (Object.keys(errors).length === 0) {
-      emailjs
-        .sendForm(
-          "service_ghcnhsp",
-          "template_6wuapow",
-          e.target,
-          "5mXmteFrkS7NWkXWd"
-        )
-        .then((result) => {
-          console.log(result.text);
-          toast.success("Message sent successfully");
-          console.log("message sent");
-          setFormData({
-            name: "",
-            company: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-        })
-        .catch((error) => {
-          console.error(error.text);
-          toast.error("Failed to send message");
-        });
-    }
-  };
+  if (Object.keys(errors).length === 0) {
+    emailjs
+      .sendForm(
+        "service_ghcnhsp",
+        "template_6wuapow",
+        e.target,
+        "5mXmteFrkS7NWkXWd"
+      )
+      .then((result) => {
+        console.log(result.text);
+        toast.success("Message sent successfully");
+        console.log("message sent");
+
+        // Check if email address is not empty
+        if (formData.email.trim() !== "") {
+          // Send response email to the user
+          emailjs
+            .send(
+              "service_ghcnhsp",
+              "template_7uc5cb6",
+              {
+                to_email: formData.email, // User's email address
+                from_name: "i Build",
+                message: "Thank you for your message. We have received it.",
+              },
+              "5mXmteFrkS7NWkXWd"
+            )
+            .then((result) => {
+              console.log(result.text);
+              console.log("Response email sent successfully");
+              setFormData({
+                name: "",
+                company: "",
+                email: "",
+                phone: "",
+                message: "",
+              });
+            })
+            .catch((error) => {
+              console.error(error);
+              console.error("Failed to send response email");
+            });
+        } else {
+          console.error("Recipient's email address is empty");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("Failed to send message" + error);
+      });
+  }
+};
+
 
   return (
     <form
