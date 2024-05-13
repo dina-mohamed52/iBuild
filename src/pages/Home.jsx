@@ -16,6 +16,7 @@ import CEO from "../component/ceo/CEO";
 import Logo from "../ui/Logo";
 import NavBar from "../ui/NavBar";
 import Feedback2 from "../component/Feedback2/Feedback2";
+import Packages from "./Packages";
 
 function Home() {
   return (
