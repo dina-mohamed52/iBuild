@@ -140,9 +140,9 @@
   }
   .h11{
      position:absolue;
-     margin-top: -45rem !important;
+     margin-top: -65rem !important;
      margin-bottom: 8rem ;
-    left: 75% !important;
+      margin-left: 18rem !important;
     transform: translateX(180%) ;
   }
 }
