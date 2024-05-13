@@ -1,0 +1,144 @@
+.maincontainer {
+  background: linear-gradient(to top left, rgba(245, 245, 245, 0.488), rgba(0, 0, 0, 0.8)),
+  url("../../assets/images/1.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 170vh; 
+  padding-top: 1rem;
+}
+
+.card {
+  width: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  margin-top: 0rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.leftCard {
+  width: 18rem;
+  height: auto;
+ background: #000000c5;
+    box-shadow: 0.5rem 1rem 0.8rem rgba(204, 169, 93, 0.445); 
+    color: #cca95d;
+    border-radius: 1rem;
+    font-family: sans-serif;
+   border: solid black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  transition: all 0.4s ease-out;
+   padding: 1rem;
+   
+  
+}
+
+.centerCard {
+  background: black;
+    box-shadow: 0.5rem 1rem 0.8rem rgba(204, 169, 93, 0.445); 
+    color: #cca95d;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    border: solid black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+     z-index: 10;
+  top: 2rem;
+  height: auto;
+  left: -10%;
+  transform: translateX(-2%);
+  width: 18rem;
+   padding: 1rem;
+   transition: all 0.4s ease-out;
+}
+
+.rightCard {
+  background: #000000c5;
+    box-shadow: 0.5rem 1rem 0.8rem rgba(204, 169, 93, 0.445); 
+    color: #cca95d;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    border: solid black;
+    font-size: 1rem;
+    font-weight: 600;
+  top: 6rem;
+ 
+  width: 18rem;
+ height: auto;
+  padding: 1rem;
+  margin-left: -5rem;
+   transition: all 0.4s ease-out;
+}
+.header{
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 600;
+}
+.h11{
+    text-align: center;
+   font-weight: bold;
+   padding:  0.5rem 2rem;
+  box-shadow: 0.2rem 0.3rem 0.5rem rgba(204, 169, 93, 0.884); 
+    font-family: sans-serif;
+    font-size: 2rem;
+    left: 50%;
+    transform: translateX(170%);
+    margin-top: -40rem;
+    color: beige;
+    width: 20rem;
+ 
+    
+    
+}
+.selectedCard {
+  outline: 0.2rem solid #cca95d;
+  z-index: 50;
+  transform:  scale(1.07);
+  box-shadow: 0 1rem 0.5rem rgba(204, 169, 93, 0.445);
+  background-color:rgba(245, 245, 245, 0.822);
+
+}
+.selectedCard .header {
+  color: black;
+  font-weight: 600;
+}
+
+
+/* //responsive design */
+@media only screen and (max-width: 768px) {
+  .maincontainer{
+    height:400vh;
+  }
+  .card{
+    margin-top: -92rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem;
+  }
+  .centerCard, .rightCard{
+    margin-left: 1rem !important;
+  }
+ .h11{
+  position: absolute;
+  margin-top: -97rem !important;
+  left: 10%;
+    transform: translateX(10%);
+ }
+}
+
+@media (min-width: 1500px) and (max-width: 2480px) {
+  .card{
+   margin-left: 18rem !important;
+  }
+  .h11{
+    left: 10%;
+    transform: translateX(100%);
+  }
+}
