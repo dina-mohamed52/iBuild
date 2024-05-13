@@ -37,6 +37,9 @@ function Home() {
       <div id="/services" className={` ${styles.service} h-auto`}>
         <Services />
       </div>
+      <div id="/services" className="h-auto">
+        <Packages />
+      </div>
       <div className="h-auto">
         <Discounts />
       </div>
