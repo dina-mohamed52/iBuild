@@ -136,7 +136,7 @@
 @media (min-width: 1500px) and (max-width: 2480px) {
   .card{
    margin-left: 18rem !important;
-    
+     margin-top: 10rem !important;
   }
   .h11{
      position:absolue;
