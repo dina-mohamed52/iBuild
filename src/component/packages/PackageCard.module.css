@@ -139,7 +139,8 @@
      margin-top: -10rem !important;
   }
   .h11{
-    left: 60%;
-    transform: translateX(170%);
+     margin-top: -10rem !important;
+    left: 75%;
+    transform: translateX(180%);
   }
 }
