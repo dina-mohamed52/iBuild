@@ -1,5 +1,7 @@
+import { LiaCcVisa } from "react-icons/lia";
 import { useLanguage } from "../../helpers/useLanguage";
 import s from "./SideContent.module.css";
+import { FaCcMastercard } from "react-icons/fa";
 
 function SideContent() {
   const { isArabic } = useLanguage();
@@ -29,7 +31,7 @@ function SideContent() {
           <p className="text-white flex flex-row items-center justify-center">
             {getTranslation("Valu", "Valu")}
             <img
-              className={` ml-[4.2rem] mb-4 w-[3rem] h-[3rem] rounded-full`}
+              className={` ml-[4.4rem] mb-4 w-[3rem] h-[3rem] rounded-full`}
               src="https://d2tm09s6lgn3z4.cloudfront.net/2023/08/BfOA0nM8-1692768785_608_194204_369535132_747623750738714_1517114919078158862_n-jpg.webp"
               alt="logo2"
             />
@@ -43,6 +45,22 @@ function SideContent() {
               src="https://cdn6.aptoide.com/imgs/3/e/1/3e1fcddce63b57257ee1d6bbcbe5746c_icon.png"
               alt="logo"
             />
+          </p>
+          <p
+            className={` mt-4 text-white flex flex-row items-center justify-center`}
+          >
+            {getTranslation("Visa", "Visa")}
+            <p className="ml-[4.4rem] ">
+              <LiaCcVisa size={50} />
+            </p>
+          </p>
+          <p
+            className={` mt-2 text-lg text-white flex flex-row items-center justify-center`}
+          >
+            {getTranslation("MasterCard", "MasterCard")}
+            <p className="ml-[1.5rem]">
+              <FaCcMastercard size={50} />
+            </p>
           </p>
         </div>
       </div>
