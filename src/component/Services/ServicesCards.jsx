@@ -1,11 +1,14 @@
 
 import { GrServices } from "react-icons/gr";
-import { MdOutlineConstruction, MdOutlineEngineering } from "react-icons/md";
+import { MdOutlineConstruction} from "react-icons/md";
 import { SiAffinitydesigner } from "react-icons/si";
 import styles from "./ServicesCards.module.css";
 import { useLanguage } from "../../helpers/useLanguage";
 import Logo from "../../ui/Logo";
-
+import im1 from "../../assets/images/feedback/WhatsApp_Image_2024-05-24_at_4.25.23_PM-removebg-preview.png";
+import im2 from "../../assets/images/feedback/WhatsApp_Image_2024-05-24_at_4.25.26_PM-removebg-preview.png";
+import im3 from "../../assets/images/feedback/WhatsApp_Image_2024-05-24_at_4.25.26_PM__1_-removebg-preview.png";
+import im4 from "../../assets/images/feedback/ooo.png";
 
 function ServicesCards() {
   const { isArabic } = useLanguage();
@@ -16,12 +19,17 @@ function ServicesCards() {
 
   return (
     <div className=" relative">
-      <Logo/>
+      <Logo />
       <div className={` ${styles.container} absolute `}>
         {/* Construction and Integrated Finishes Card */}
         <div className={`${styles.card}`}>
           <div className={` ${styles.icon1} `}>
-            <MdOutlineConstruction size={50} color="#cca95dc5" />
+            {/* <MdOutlineConstruction size={50} color="#cca95dc5" /> */}
+            <img
+              className=" mt-[0.6rem] mb-[-1.2rem] w-[8rem] h-[6rem] "
+              src={im4}
+              alt="Construction and Integrated"
+            />
           </div>
           <div className={` ${styles.Hcontainer1} `}>
             <h1 className={`${styles.heading1}`}>
@@ -68,8 +76,9 @@ function ServicesCards() {
 
         {/* Engineering Services Card */}
         <div className={`${styles.card} ${isArabic ? styles.arabicText : ""}`}>
-          <div className={` ${styles.icon2}`}>
-            <MdOutlineEngineering size={50} color="#cca95dc5" />
+          <div className={`  w-[10rem] h-[5rem] ${styles.icon2}`}>
+            {/* <MdOutlineEngineering size={50} color="#cca95dc5" /> */}
+            <img   src={im1} alt=" Engineering Services" />
           </div>
           <div
             className={` ${styles.Hcontainer1}
@@ -138,7 +147,12 @@ function ServicesCards() {
               isArabic ? " absolute mt-[-11rem] mb-[8rem]" : ""
             } `}
           >
-            <GrServices size={50} color="#cca95dc5" />
+            {/* <GrServices size={50} color="#cca95dc5" /> */}
+            <img
+              className=" mt-[0.3rem] mb-[-1rem] w-[6rem] h-[6rem] "
+              src={im3}
+              alt="Specialized Services"
+            />
           </div>
           <div
             className={` ${styles.Hcontainer1}  ${
@@ -197,7 +211,12 @@ function ServicesCards() {
         {/* Interior and Exterior Design Card */}
         <div className={`${styles.card} ${isArabic ? styles.arabicText : ""} `}>
           <div className={` ${styles.icon4} `}>
-            <SiAffinitydesigner size={50} color="#cca95dc5" />
+            {/* <SiAffinitydesigner size={50} color="#cca95dc5" /> */}
+            <img
+              className=" mt-[-3.5rem] mb-[-1rem]  w-[8rem] h-[9rem]"
+              src={im2}
+              alt="Interior and Exterior Design"
+            />
           </div>
           <div
             className={` ${styles.Hcontainer1} 
