@@ -36,7 +36,8 @@ function CEOComponent ()
       text: `نحن بمفردنا لا يمكننا فعل الكثير؛ معًا يمكننا فعل الكثير`,
       author: "وسيم ر. مختار",
       location: "مصر، القاهرة",
-      photo: "https://via.placeholder.com/150",
+      photo:
+        "https://tcpyramswfpysxmvhypu.supabase.co/storage/v1/object/public/teamMembers/WhatsApp_Image_2024-05-24_at_4.22.37_PM.jpeg?t=2024-05-28T11%3A56%3A46.092Z",
     },
     {
       id: 1,
@@ -45,7 +46,8 @@ function CEOComponent ()
       text: `بحب كبير، ومعًا يمكننا فعل شيء رائع`,
       author: "رامي النمري",
       location: "مصر، القاهرة",
-      photo: "https://via.placeholder.com/150",
+      photo:
+        "https://media.istockphoto.com/id/1167768487/photo/indian-businessman-wearing-white-elegant-shirt-standing-over-isolated-yellow-background.jpg?s=612x612&w=0&k=20&c=_Z82yRj8KM22ma6iiwzjM_h0VIYfx-zJ4wPLX2MNsv4=",
     },
     {
       id: 2,
@@ -55,7 +57,8 @@ function CEOComponent ()
 والعمل معًا هو النجاح.`,
       author: "بيتر رفلة",
       location: "مصر، القاهرة",
-      photo: "https://via.placeholder.com/150",
+      photo:
+        "https://tcpyramswfpysxmvhypu.supabase.co/storage/v1/object/public/teamMembers/WhatsApp_Image_2024-05-24_at_4.22.46_PM.jpeg",
     },
     {
       id: 3,
@@ -64,7 +67,8 @@ function CEOComponent ()
 والطريقة الوحيدة للقيام بذلك هي التغلب على حاجتنا للجبروت.`,
       author: "فريق التسويق",
       location: "مصر، القاهرة",
-      photo: "https://via.placeholder.com/150",
+      photo:
+        "https://crystalclearcomms.com/wp-content/uploads/2021/07/marketingteam.jpg",
     },
   ];
 
@@ -77,7 +81,7 @@ function CEOComponent ()
       author: "Wassim R. Mokhtar",
       location: "Egypt, Cairo",
       photo:
-        "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
+        "https://tcpyramswfpysxmvhypu.supabase.co/storage/v1/object/public/teamMembers/WhatsApp_Image_2024-05-24_at_4.22.37_PM.jpeg?t=2024-05-28T11%3A56%3A46.092Z",
     },
     {
       id: 1,
@@ -93,12 +97,12 @@ function CEOComponent ()
       id: 2,
       header: "Chief Operating Officer (COO)",
       edu: "Faculty of Engineering, Cairo University",
-        text: `Coming together is a beginning, staying together is progress,
+      text: `Coming together is a beginning, staying together is progress,
       and working together is success.`,
       author: "Peter Rafla",
       location: "Egypt, Cairo",
       photo:
-        "https://media.istockphoto.com/id/1167768487/photo/indian-businessman-wearing-white-elegant-shirt-standing-over-isolated-yellow-background.jpg?s=612x612&w=0&k=20&c=_Z82yRj8KM22ma6iiwzjM_h0VIYfx-zJ4wPLX2MNsv4=",
+        "https://tcpyramswfpysxmvhypu.supabase.co/storage/v1/object/public/teamMembers/WhatsApp_Image_2024-05-24_at_4.22.46_PM.jpeg",
     },
     {
       id: 3,
@@ -108,7 +112,7 @@ And the only way to do that is to overcome our need for invulnerability.`,
       author: "Marketing Team",
       location: "Egypt, Cairo",
       photo:
-        "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-55958-614810.jpg&fm=jpg",
+        "https://crystalclearcomms.com/wp-content/uploads/2021/07/marketingteam.jpg",
     },
   ];
   const slides = isArabic ? slidesArabic : slidesEnglish;
