@@ -1,7 +1,5 @@
 
-import { GrServices } from "react-icons/gr";
-import { MdOutlineConstruction} from "react-icons/md";
-import { SiAffinitydesigner } from "react-icons/si";
+
 import styles from "./ServicesCards.module.css";
 import { useLanguage } from "../../helpers/useLanguage";
 import Logo from "../../ui/Logo";
@@ -26,7 +24,7 @@ function ServicesCards() {
           <div className={` ${styles.icon1} `}>
             {/* <MdOutlineConstruction size={50} color="#cca95dc5" /> */}
             <img
-              className=" mt-[0.6rem] mb-[-1.2rem] w-[8rem] h-[6rem] "
+              className=" mt-[4rem] mb-[-1.2rem] w-[8rem] h-[6rem] "
               src={im4}
               alt="Construction and Integrated"
             />
@@ -45,7 +43,7 @@ function ServicesCards() {
             >
               <h2>
                 {" "}
-                {getTranslation(" \u2212 Contracting", "المقاولات \u2212")}
+                {getTranslation(" \u2212Contracting", "المقاولات \u2212")}
               </h2>
 
               <h2>
@@ -58,7 +56,7 @@ function ServicesCards() {
               <h2>
                 {" "}
                 {getTranslation(
-                  "\u2212 All Types of Insulation Works",
+                  "\u2212All Types of Insulation Works",
                   " جميع أنواع أعمال العزل \u2212"
                 )}
               </h2>
@@ -66,9 +64,13 @@ function ServicesCards() {
               <h2>
                 {" "}
                 {getTranslation(
-                  " \u2212 AutoCad and 3DMax Designs",
-                  "تصميمات AutoCad و 3DMax \u2212"
+                  " \u2212Construction and maintenance of swimming pools",
+                  "بناء وصيانة حمامات السباحة \u2212"
                 )}
+              </h2>
+              <h2>
+                {" "}
+                {getTranslation(" \u2212Light structure", "هيكل خفيف\u2212")}
               </h2>
             </div>
           </div>
@@ -78,7 +80,7 @@ function ServicesCards() {
         <div className={`${styles.card} ${isArabic ? styles.arabicText : ""}`}>
           <div className={`  w-[10rem] h-[5rem] ${styles.icon2}`}>
             {/* <MdOutlineEngineering size={50} color="#cca95dc5" /> */}
-            <img   src={im1} alt=" Engineering Services" />
+            <img src={im1} alt=" Engineering Services" />
           </div>
           <div
             className={` ${styles.Hcontainer1}
@@ -95,12 +97,12 @@ function ServicesCards() {
             >
               <h2>
                 {" "}
-                {getTranslation("\u2212 Plumbing Works", "أعمال السباكة\u2212")}
+                {getTranslation("\u2212Plumbing Works", "أعمال السباكة\u2212")}
               </h2>
               <h2>
                 {" "}
                 {getTranslation(
-                  "\u2212 Electricity Works",
+                  "\u2212Electricity Works",
                   "أعمال الكهرباء\u2212"
                 )}
               </h2>
@@ -114,7 +116,7 @@ function ServicesCards() {
               <h2>
                 {" "}
                 {getTranslation(
-                  "\u2212 Gypsum Board Works",
+                  "\u2212Gypsum Board Works",
                   "أعمال الجبس\u2212"
                 )}
               </h2>
