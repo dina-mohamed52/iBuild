@@ -60,14 +60,14 @@ function HomeHeader() {
             <p>
               {!isContactsVisible && (
                 <span>
-                  {isArabic ? "التصميم يلبي الرغبة" : "(Design meets desire)"}
+                  {isArabic ? "التصميم يلبي الرغبة" : "Design meets desire"}
                 </span>
               )}
             </p>
             {isContactsVisible && (
               <TypedText
                 text={` ${
-                  isArabic ? "التصميم يلبي الرغبة" : "(Design meets desire)"
+                  isArabic ? "التصميم يلبي الرغبة" : "Design meets desire"
                 }`}
                 speed={80}
               />
