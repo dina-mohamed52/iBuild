@@ -33,6 +33,11 @@ function CEOComponent ()
       id: 0,
       header: "المدير التنفيذي الرئيسي (CEO)",
       edu: "كلية الهندسة، جامعة القاهرة",
+      exp: `خبرة 20 عاماً في مجال العقارات والمقاولات حيث عمل
+العديد من شركات التطوير العقاري والسياحي داخل مصر
+وفي الخارج في البلدان الأفريقية وترقى في الرتب
+من مهندس الموقع إلى مدير المشروع.
+دورات في عقود الفيديك وريادة الأعمال وتحديد الأهداف واتخاذ القرار`,
       text: `نحن بمفردنا لا يمكننا فعل الكثير؛ معًا يمكننا فعل الكثير`,
       author: "وسيم ر. مختار",
       location: "مصر، القاهرة",
@@ -43,6 +48,7 @@ function CEOComponent ()
       id: 1,
       header: "المدير المالي الرئيسي (CFO)",
       edu: "كلية التجارة، جامعة عين شمس",
+      exp: `شهادة في المحاسبة التطبيقية المحوسبة، الجامعة الأمريكية بالقاهرة (AUC). ماجستير في المفاهيم الأساسية للحوسبة المستخدمة في برمجة الكمبيوتر`,
       text: `بحب كبير، ومعًا يمكننا فعل شيء رائع`,
       author: "رامي النمري",
       location: "مصر، القاهرة",
@@ -53,6 +59,7 @@ function CEOComponent ()
       id: 2,
       header: "المدير التنفيذي العملي (COO)",
       edu: "كلية الهندسة، جامعة القاهرة",
+      exp: `بخبرة تزيد عن 8 سنوات في أعمال التشطيبات والديكور والخرسانة والواجهات. مهندس تنفيذي لعدة مشاريع داخل وخارج القاهرة`,
       text: `التجمع هو بداية، البقاء معًا هو تقدم،
 والعمل معًا هو النجاح.`,
       author: "بيتر رفلة",
@@ -77,6 +84,11 @@ function CEOComponent ()
       id: 0,
       header: "Chief Executive Officer (CEO)",
       edu: "Faculty of Engineering, Cairo University",
+      exp: `20 years of experience in the field of real estate and contracting, where he worked in
+many real estate and tourism development companies inside Egypt
+and abroad in African countries and rose through the ranks
+from site engineer to project manager.
+Courses in FIDIC contracts, entrepreneurship, goal setting, and decision making`,
       text: `Alone we can do so little; together we can do so much`,
       author: "Wassim R. Mokhtar",
       location: "Egypt, Cairo",
@@ -87,6 +99,8 @@ function CEOComponent ()
       id: 1,
       header: "Chief Financial Officer (CFO)",
       edu: "Faculty of Commerce, Ain Shams University",
+      exp: `Certificate in Applied computerized accounting, American University in Cairo (AUC)
+Masters in computing basic concepts used in computer programming.`,
       text: `with great love, and together we can do something wonderful`,
       author: "Ramy El Nemry",
       location: "Egypt, Cairo",
@@ -97,6 +111,8 @@ function CEOComponent ()
       id: 2,
       header: "Chief Operating Officer (COO)",
       edu: "Faculty of Engineering, Cairo University",
+      exp: `With over 8 years of expertise in finishing, decoration, concrete, and facade works.
+Executive engineer on multiple projects both in and outside Cairo.`,
       text: `Coming together is a beginning, staying together is progress,
       and working together is success.`,
       author: "Peter Rafla",
@@ -148,23 +164,23 @@ And the only way to do that is to overcome our need for invulnerability.`,
                   <img src={slide.photo} alt="image" className="rounded-full" />
                 </div>
                 <div className={`${styles.content} `}>
-                  <h1 className="font-bold  text-xl md:text-2xl lg:text-3xl">
+                  <h1 className="font-bold  text-[1.5rem] md:text-2xl lg:text-3xl">
                     {slide.header}
                   </h1>
-                  <p className="text-sm md:text-base lg:text-xl text-gray-950">
+                  <p className=" mb-[0.5rem] sm:mt-[0.1rem] mt-[0.5rem] font-medium text-sm sm:text-[0.6rem] md:text-base lg:text-sm text-gray-950">
                     {slide.edu}
                   </p>
-                  <p className="text-sm md:text-base lg:text-xl">
+                  <p className="text-sm  md:text-base lg:text-sm">
+                    {slide.exp}
+                  </p>
+                  <p className=" mt-[1rem] text-sm md:text-base lg:text-sm">
                     {slide.text}
                   </p>
 
                   <div className={`${styles.subcontent} mt-2 md:mt-4 lg:mt-6`}>
-                    <h2 className="font-semibold   text-base md:text-lg lg:text-xl">
+                    <h2 className="font-semibold  sm:text-xl text-lg md:text-lg lg:text-xl">
                       {slide.author}
                     </h2>
-                    <p className="text-sm md:text-base lg:text-lg text-gray-950">
-                      {slide.location}
-                    </p>
                   </div>
                 </div>
               </div>
