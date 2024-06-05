@@ -44,8 +44,8 @@ function ServicesCards() {
               )}
             </h1>
             <div
-              className={`${styles.subHeading1}  ${
-                isArabic ? styles.arabicText : ""
+              className={`${styles.subHeading1}   ${
+                isArabic ? " text-right  sm:ml-[-1.2rem] ml-[-0.5rem]" : ""
               } sm:mt-4 mt-[-0.2rem]
               sm:mb-[2rem] mb-[1rem] 
                 `}
@@ -116,7 +116,7 @@ function ServicesCards() {
             </h1>
             <div
               className={`${styles.subHeading1}   ${
-                isArabic ? styles.arabicText : ""
+                isArabic ? " text-right  sm:ml-[-1.2rem] ml-[-0.3rem] " : ""
               } sm:mt-4 mt-[-0.2rem] `}
             >
               <h2>
@@ -187,14 +187,16 @@ function ServicesCards() {
         >
           <div
             className={` ${styles.icon3}  ${
-              isArabic ? " absolute mt-[-11rem] mb-[8rem]" : ""
+              isArabic
+                ? "absolute sm:mt-[-18rem] mt-[-10rem] sm:mb-[4rem] mb-[4rem] "
+                : ""
             }   sm:mt-[-3rem] mt-[5.5rem]   sm:mb-[1rem] mb-[0rem]   `}
           >
             <GrServices size={50} color="#cca95dc5" />
           </div>
           <div
             className={` ${styles.Hcontainer1}  ${
-              isArabic ? " mt-[-1rem] mb-[4rem]" : ""
+              isArabic ? " sm:mt-[3.5rem] mt-[9rem] mb-[4rem]" : ""
             } 
             sm:mb-0 mb-[-0.3rem]
               `}
@@ -203,12 +205,18 @@ function ServicesCards() {
               {getTranslation("Specialized Services:", "الخدمات المتخصصة")}
             </h1>
           </div>
+          {/* ${isArabic ? "mt-[3rem]" : ""} */}
           <div
             className={`${styles.subHeading2}   ${
-              isArabic ? styles.arabicText : ""
+              isArabic ? " text-right  ml-[-1.2rem]" : ""
             }
             sm:pb-0 pb-[2rem]
-               ${isArabic ? " mt-[-3rem]" : ""}
+              ${
+                isArabic
+                  ? "sm:mb-[3.5rem] sm:mt-[1rem] mt-[-5rem] mb-[2rem] "
+                  : ""
+              } 
+             
              `}
           >
             <h2>
@@ -247,7 +255,11 @@ function ServicesCards() {
               )}
             </h2>
           </div>
-          <div className="flex items-center justify-center gap-0 sm:mt-[1.5rem] py-[5.5rem] sm:py-0 mt-[-7rem] ">
+          <div
+            className={` ${
+              isArabic ? "sm:mt-[-1rem] " : ""
+            } flex items-center justify-center gap-0 sm:mt-[1.5rem] py-[5.5rem] sm:py-0 mt-[-7rem] `}
+          >
             <img
               src={im8}
               alt="img"
@@ -267,7 +279,9 @@ function ServicesCards() {
         </div>
 
         {/* Interior and Exterior Design Card */}
-        <div className={`${styles.card} ${isArabic ? styles.arabicText : ""} `}>
+        <div
+          className={`${styles.card}  ${isArabic ? styles.arabicText : ""}  `}
+        >
           <div
             className={` ${styles.icon4}  sm:mt-[-3rem]  mt-0
            sm:mb-[2rem]  mb-0
@@ -293,7 +307,7 @@ function ServicesCards() {
           </div>
           <div
             className={`${styles.subHeading2} 
-            ${isArabic ? styles.arabicText : ""}
+          ${isArabic ? "text-right  ml-[-1.2rem]" : ""}
             sm:mt-[-2rem]  mt-0
             `}
           >
