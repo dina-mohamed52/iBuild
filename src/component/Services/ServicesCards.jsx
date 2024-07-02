@@ -188,7 +188,7 @@ function ServicesCards() {
           <div
             className={` ${styles.icon3}  ${
               isArabic
-                ? "absolute sm:mt-[-20rem] mt-[-12rem] sm:mb-[4rem] mb-[4rem] "
+                ? "absolute sm:mt-[-30rem] mt-[-20rem] sm:mb-[4rem] mb-[4rem] "
                 : ""
             }   sm:mt-[-3rem] mt-[5.5rem]   sm:mb-[1rem] mb-[0rem]   `}
           >
