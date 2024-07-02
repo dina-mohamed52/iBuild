@@ -185,19 +185,20 @@ function ServicesCards() {
        
         `}
         >
+          {/* "absolute sm:mt-[-20rem] mt-[-12rem] sm:mb-[4rem] mb-[4rem] " */}
+          {/* ${
+            isArabic
+              ? "sm:mt-[-20rem] mt-[-12rem] sm:mb-[4rem] mb-[4rem]"
+              : "" } */}
           <div
-            className={` ${styles.icon3}  ${
-              isArabic
-                ? "sm:mt-[-12rem] mt-[-8rem] sm:mb-[1rem] mb-[0rem] "
-                : ""
+            className={` ${styles.icon3}
             }   sm:mt-[-3rem] mt-[5.5rem]   sm:mb-[1rem] mb-[0rem]   `}
           >
             <GrServices size={50} color="#cca95dc5" />
           </div>
+          {/* ${isArabic ? " sm:mt-[3.5rem] mt-[9rem] mb-[4rem]" : ""} */}
           <div
-            className={` ${styles.Hcontainer1}  ${
-              isArabic ? " sm:mt-[3.5rem] mt-[9rem] mb-[4rem]" : ""
-            } 
+            className={` ${styles.Hcontainer1} 
             sm:mb-0 mb-[-0.3rem]
               `}
           >
@@ -206,17 +207,13 @@ function ServicesCards() {
             </h1>
           </div>
           {/* ${isArabic ? "mt-[3rem]" : ""} */}
+          {/* {isArabic ? "sm:mb-[3.5rem] sm:mt-[1rem] mt-[-5rem] mb-[2rem] " : ""} */}
           <div
             className={`${styles.subHeading2}   ${
               isArabic ? " text-right  ml-[-1.2rem]" : ""
             }
             sm:pb-0 pb-[2rem]
-              ${
-                isArabic
-                  ? "sm:mb-[3.5rem] sm:mt-[1rem] mt-[-5rem] mb-[2rem] "
-                  : ""
-              } 
-             
+           
              `}
           >
             <h2>
